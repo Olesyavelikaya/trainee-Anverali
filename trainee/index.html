@@ -3,86 +3,188 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
     <title>Trainee Anverali</title>
   </head>
   <body>
     <header class="header p-2 bg-light">
-     <span class="font-2 font-bold font-logo">Тонус</span>
-      <nav>
+      <span class="font-2 font-bold font-logo">Тонус</span>
+      <input type="checkbox" id="burger" />
+      <label for="burger"></label>
+      <nav class="nav">
         <ul class="nav-horizontal">
-          <li><a href="#" class="active-link mr-1">Главная</a></li>
+          <li><a href="#" class="mr-1 font-bold">Главная</a></li>
           <li><a href="#" class="mr-1 font-bold">О нас</a></li>
           <li><a href="#" class="mr-1 font-bold">Подписки</a></li>
-          <l><a href="#" class="mr-1 font-bold">Контакты</a></li>
+          <li><a href="#" class="mr-1 font-bold">Контакты</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="main-container">
-        <div class="container">
-          <div class="title-container">
-            <h1>Мы - №1 фитнес-платформа </h1>
-           <h2>Экономь время и деньги! </h2> 
-           <p>Выбери тариф и начинай заниматься с лучшими тренерами у себя дома: </p>
-  
-  
-            </div>
-  
-          <section class="cards">
-            <div class="card">
-              <small>Подписки</small>
-              <h2 class="title-card">Месячная подписка</h2>
-              <ul>
-                <li class="card-item">Доступ к базовым тренировкам и планам питания</li>
-                <li class="card-item">Ограниченный доступ к календарю тренировок</li>
+      <div class="title-container">
+        <h1>Мы - №1 фитнес-платформа</h1>
+        <h2>Экономь время и деньги!</h2>
+        <p>
+          Выбери тариф и начинай заниматься с лучшими тренерами у себя дома:
+        </p>
+      </div>
+      <div class="container_main-subscription">
+        <section
+          class="container-cards justify-content-eleny justify-content-center"
+        >
+          <div class="card main-card_size">
+            <small>Подписки</small>
+            <h2 class="title-card">Месячная подписка</h2>
+            <ul class="list">
+              <li class="card-item">
+                Доступ к базовым тренировкам и планам питания
+              </li>
+              <li class="card-item">
+                Ограниченный доступ к календарю тренировок
+              </li>
+            </ul>
+            <button class="button-buy font-bold">Купить за $4.99</button>
+          </div>
+          <div class="card main-card_size">
+            <small>Подписка</small>
+            <h2 class="title-card">Доступ на 3 месяца</h2>
+            <ul class="list">
+              <li class="card-item">
+                Доступ к расширенным тренировкам и персонализированным планам
+                питания
+              </li>
+              <li class="card-item">Полный доступ к календарю тренировок</li>
+              <li class="card-item">Книга ПП-рецептов в подарок</li>
+            </ul>
+            <button class="button-buy font-bold">Купить за $12.99</button>
+          </div>
+          <div class="card main-card_size">
+            <small>Подписка</small>
+            <h2 class="title-card">Безлимит на 1 год</h2>
+            <ul class="list">
+              <li class="card-item">
+                Полный доступ ко всем тренировкам, планам питания и видеоурокам
+              </li>
+              <li class="card-item">
+                Приоритетная поддержка по телефону и электронной почте
+              </li>
+              <li class="card-item">Книга ПП-рецептов</li>
+              <li class="card-item">Консультация врача-диетолога</li>
+            </ul>
+            <button class="button-buy font-bold">Купить за $49.99</button>
+          </div>
+          <div class="card main-card_size">
+            <small>Подписка</small>
+            <h2 class="title-card">Доступ НАВСЕГДА</h2>
+            <ul class="list">
+              <li class="card-item">
+                Полный доступ ко всем тренировкам, планам питания и видеоурокам
+              </li>
+              <li class="card-item">
+                Приоритетная поддержка по телефону и электронной почте
+              </li>
+              <li class="card-item">Книга ПП-рецептов</li>
+              <li class="card-item">Консультация врача-диетолога</li>
+              <li class="card-item">10 персональных тренировок</li>
+              <li class="card-item">Подарки от наших спонсоров</li>
+            </ul>
+            <button class="button-buy font-bold">Купить за $79.99</button>
+          </div>
+        </section>
+        <section class="additional-subscription">
+          <div class="title-additiniol">
+            <h2>
+              Прокачайся до
+              <span class="underlined-text">лучшей версии себя</span> с
+              дополнительными подписками
+            </h2>
+          </div>
+          <div class="container-cards gap-10 justify-content-center">
+            <div class="card additional-card_size">
+              <small>Дополнительная подписка</small>
+              <h2 class="title-card">Персональные тренировки</h2>
+              <ul class="list">
+                <li class="card-item">
+                  Индивидуальные тренировки с персональным тренером
+                </li>
+                <li class="card-item">Прямые консультации с тренером</li>
+                <li class="card-item font-bold">
+                  + $29.99/месяц к вашей подписке
+                </li>
               </ul>
-              <button class="button-buy font-bold">Купить за $4.99</button>
+              <button class="button-buy font-bold">Подключить</button>
             </div>
-      
-            <div class="card">
-              <small>Подписка</small>
-              <h2 class="title-card">Доступ на 3 месяца</h2>
-              <ul>
-                <li class="card-item">Доступ к расширенным тренировкам и персонализированным планам питания</li>
-                <li class="card-item">Полный доступ к календарю тренировок</li>
-                <li class="card-item">Книга ПП-рецептов в подарок</li>
-  
+            <div class="card additional-card_size">
+              <small>Дополнительная подписка</small>
+              <h2 class="title-card">Здоровое питание</h2>
+              <ul class="list">
+                <li class="card-item">
+                  Персонализированные планы питания и рецепты
+                </li>
+                <li class="card-item">Учебные материалы по питанию</li>
+                <li class="card-item font-bold">
+                  + $12.99/месяц к вашей подписке
+                </li>
               </ul>
-              <button class="button-buy font-bold">Купить за $12.99</button>
+              <button class="button-buy font-bold">Подключить</button>
             </div>
-      
-            <div class="card">
-              <small>Подписка</small>
-              <h2 class="title-card p-1">Безлимит на 1 год</h2>
-              <ul>
-                <li class="card-item">Полный доступ ко всем тренировкам, планам питания и видеоурокам</li>
-                <li class="card-item">Приоритетная поддержка по телефону и электронной почте</li>
-                <li class="card-item">Книга ПП-рецептов</li>
-                <li class="card-item">Консультация врача-диетолога </li>
+            <div class="card additional-card_size">
+              <small>Дополнительная подписка</small>
+              <h2 class="title-card">Мотивация</h2>
+              <ul class="list">
+                <li class="card-item">
+                  Ежедневные мотивационные аудиосообщения
+                </li>
+                <li class="card-item">Доступ к сообществу единомышленников</li>
+                <li class="card-item font-bold">
+                  + $1.99/месяц к вашей подписке
+                </li>
               </ul>
-              <button class="button-buy font-bold">Купить за $49.99</button>
+              <button class="button-buy font-bold">Подключить</button>
             </div>
-  
-            <div class="card">
-              <small>Подписка</small>
-              <h2 class="title-card">Доступ НАВСЕГДА</h2>
-              <ul>
-                <li class="card-item">Полный доступ ко всем тренировкам, планам питания и видеоурокам</li>
-                <li class="card-item">Приоритетная поддержка по телефону и электронной почте</li>
-                <li class="card-item">Книга ПП-рецептов</li>
-                <li class="card-item">Консультация врача-диетолога </li>
-                <li class="card-item">10 персональных тренировок</li>
-                <li class="card-item">Подарки от наших спонсоров</li>
-  
-  
+            <div class="card additional-card_size">
+              <small>Дополнительная подписка</small>
+              <h2 class="title-card">Фитнес-гаджеты</h2>
+              <ul class="list">
+                <li class="card-item">
+                  Интеграция с популярными фитнес-браслетами и часами
+                </li>
+                <li class="card-item">Синхронизация данных тренировок</li>
+                <li class="card-item font-bold">
+                  + $2.99/месяц к вашей подписке
+                </li>
               </ul>
-              <button class="button-buy font-bold"> Купить за $79.99 </button>
+              <button class="button-buy font-bold">Подключить</button>
             </div>
-          </section>
-        </div>
+            <div class="card additional-card_size">
+              <small>Дополнительная подписка</small>
+              <h2 class="title-card">Вебинары</h2>
+              <ul class="list">
+                <li class="card-item">
+                  Регулярные вебинары с экспертами по фитнесу и питанию
+                </li>
+                <li class="card-item">Улучшите свои знания и навыки</li>
+                <li class="card-item font-bold">
+                  + $9.99/месяц к вашей подписке
+                </li>
+              </ul>
+              <button class="button-buy font-bold">Подключить</button>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
-    <script type="module" src="/main.js"></script>
+    <footer>
+      <div class="container-footer">
+        <ul class="list-footer gap-10">
+          <li><a href="#" class="font-bold">Главная</a></li>
+          <li><a href="#" class="font-bold">О нас</a></li>
+          <li><a href="#" class="font-bold">Подписки</a></li>
+          <li><a href="#" class="font-bold">Контакты</a></li>
+        </ul>
+        <p>Все права защищены</p>
+      </div>
+    </footer>
   </body>
 </html>
