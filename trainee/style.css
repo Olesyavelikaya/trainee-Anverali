@@ -35,7 +35,7 @@
 
   [for="burger"]::before {
     display: inline-block;
-    background: url("./public/menu.png") no-repeat;
+    background: url("/menu.png") no-repeat;
     background-size: contain;
     height: 50px;
     width: 50px;
