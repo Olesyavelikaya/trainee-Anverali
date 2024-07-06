@@ -214,6 +214,7 @@
   justify-content: center;
   flex-direction: row;
   list-style-type: none;
+  gap: 10px;
 }
 
 .list-footer a {
