@@ -1,7 +1,6 @@
-@import './normalize.css';
-@import './media.css';
+@import "./normalize.css";
+@import "./media.css";
 @import url("https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap");
-
 
 .p-2 {
   padding: 14px 60px;
@@ -87,9 +86,6 @@
 }
 
 @media (min-width: 300px) and (max-width: 650px) {
-
-
-
   [for="burger"] {
     display: block;
     height: 50px;
@@ -197,7 +193,6 @@
 .additional-subscription {
   margin: 100px 0 30px;
 }
-
 
 .title-additiniol {
   margin-bottom: 30px;
