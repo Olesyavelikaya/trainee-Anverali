@@ -1,67 +1,13 @@
+@import './normalize.css';
+@import './media.css';
 @import url("https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap");
 
 @font-face {
   font-family: "Mavka";
-  src: url("./public/font/\ Mavka.ttf");
+  src: url("font/\ Mavka.ttf");
 }
 
-@media screen and (max-width: 999px) {
-  .justify-content-center {
-    justify-content: center;
-  }
-}
 
-@media screen and (min-width: 1000px) {
-  .justify-content-eleny {
-    justify-content: space-evenly;
-  }
-}
-
-#burger,
-[for="burger"] {
-  display: none;
-}
-
-@media screen and (max-width: 650px) {
-  .header {
-    display: block;
-  }
-
-  [for="burger"] {
-    display: block;
-    height: 50px;
-    width: 50px;
-  }
-
-  [for="burger"]::before {
-    display: inline-block;
-    background: url("/menu.png") no-repeat;
-    background-size: contain;
-    height: 50px;
-    width: 50px;
-
-    cursor: pointer;
-
-    content: "";
-  }
-
-  nav {
-    display: none;
-  }
-
-  #burger:checked + label + nav {
-    display: block;
-  }
-
-  .nav ul {
-    display: block;
-  }
-
-  .nav li {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
 
 .p-2 {
   padding: 14px 60px;
@@ -142,10 +88,54 @@
   text-decoration: overline;
 }
 
+#burger,
+[for="burger"] {
+  display: none;
+}
+
+@media (min-width: 300px) and (max-width: 650px) {
+
+  
+
+  [for="burger"] {
+    display: block;
+    height: 50px;
+    width: 50px;
+  }
+
+  [for="burger"]::before {
+    display: inline-block;
+    background: url("/menu.png") no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+
+    cursor: pointer;
+
+    content: "";
+  }
+
+  nav {
+    display: none;
+  }
+
+  #burger:checked + label + nav {
+    display: block;
+  }
+
+  .nav ul {
+    display: block;
+  }
+
+  .nav li {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 /* Карточки */
 .container-cards {
   width: 100%;
-  max-width: 1440px;
   margin: 0 auto;
   gap: 5px;
 }
@@ -153,20 +143,15 @@
 .card {
   flex-direction: column;
   padding: 20px;
+  border: 1px solid black;
+  transition: 0.5s;
+  border-radius: 10px;
   background-image: linear-gradient(
     43deg,
     #c9d0f5 0%,
     #f0bfec 46%,
     #fce7c0 100%
   );
-  cursor: pointer;
-  transition: 0.5s;
-  border-radius: 10px;
-}
-
-.main-card_size {
-  width: 330px;
-  height: 600px;
 }
 
 .card:hover {
@@ -187,6 +172,10 @@
   font-size: 16px;
   cursor: pointer;
   color: black;
+}
+
+.button-buy:hover {
+  background-color: rgb(242, 248, 239);
 }
 
 .card-item {
@@ -216,10 +205,6 @@
   margin: 100px 0 30px;
 }
 
-.additional-card_size {
-  min-height: 370px;
-  width: 470px;
-}
 
 .title-additiniol {
   margin-bottom: 30px;
@@ -227,7 +212,7 @@
 
 /* Футер */
 .container-footer {
-  margin-top: 200px;
+  margin-top: 100px;
   border-top: 1px solid rgb(204, 200, 200);
   padding: 25px 0;
   background-image: linear-gradient(
