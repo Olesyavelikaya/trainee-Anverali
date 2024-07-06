@@ -71,8 +71,6 @@
 
  
 
-
-  
   @media screen and (min-width: 1024px) {
     .container_main-cards {
       max-width: 1020px;
@@ -94,6 +92,32 @@
       width: 570px;
     }
   }
+
+
+  @media screen and (min-width: 1280px) {
+
+    .container_main-cards {
+        max-width: 1200px;
+        justify-content: center;
+      }
+    
+      .main-card_size {
+        width: 430px;
+        height: 600px;
+      }
+  
+    .container_additional-cards {
+      max-width: 1200px;
+      justify-content: center;
+    } 
+    
+    .additional-card_size {
+      min-height: 370px;
+      width: 520px;
+    }
+  }
+
+
   
   @media  screen and (min-width: 1400px) {
     .container_main-cards {
